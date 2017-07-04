@@ -10,7 +10,6 @@ export class EventRouteActivator implements CanActivate{
     if(!eventExists){
       this.router.navigate(['/404'])
     }
-    console.log(eventExists)
     return eventExists
   }
 }
